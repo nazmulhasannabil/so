@@ -1,0 +1,289 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shomokounik Engineering Ltd.</title>
+  <script src="index.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("sUAiOlzl5_Lgi0stw");
+   })();
+</script>
+  <style>
+    #more {display: none;}
+    
+    .no-scrollbar::-webkit-scrollbar{      /* style for no-scrollbar */
+        display: none;
+    }             
+    .no-scrollbar{
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+
+    
+  </style>
+</head>
+<body id="home" class="flex flex-col scroll-smooth">
+  <!-- Header  ooooollllllllddddddd-->  
+    <div class="md:flex md:justify-between md:items-center px-[5%] py-4">
+        <a href="index.html">
+
+        <div class="flex items-center cursor-pointer">
+            <img class="w-20 " src="Images/logo.png" alt=""><span class="text-3xl font-semibold">Shomokounik</span>
+        </div>
+    </a>
+        <div class="md:flex md:items-center">
+            <a class="hover:font-bold duration-300 mx-4" href="index.html">Home</a>
+            <a class="hover:font-bold duration-300 mx-4" href="#about">About</a>
+            <a class="hover:font-bold duration-300 mx-4" href="#projects">Services</a>
+            <a class="hover:font-bold duration-300 mx-4" href="#contactUs">Contact Us</a>
+        </div>
+    </div>
+    <!-- landing page cover -->
+    <div class="px-[5%]">
+        <img src="Images/landing-page-cover.jpg" alt="">
+    </div>
+
+    <!-- Short history -->
+    <div id="about" class="px-[5%] flex flex-col-reverse md:flex-row justify-between items-center gap-10 pt-10">
+        <div class="basis-[50%]  px-[10%] bg-gray-200 p-5 ">
+            <span class="text-2xl font-semibold font-semibold">Shomokounik Engineering Ltd.</span>
+            <p class="mt-5">Shomokounik Engineering Ltd, established in 2019, stands as a stalwart in the realm of civil engineering. With a rich history of delivering innovative and sustainable solutions, the company has played a pivotal role in shaping the infrastructure landscape.
+
+                From the inception, Shomokounik Engineering has been committed to excellence, combining technical prowess with a client-centric approach. The company's diverse portfolio spans the construction of roads, bridges, and architectural marvels that stand as testaments to precision and durability.<span id="dots">...</span><span id="more">
+                
+                Under the leadership of visionary professionals, Shomokounik Engineering has successfully undertaken and completed projects of varying scales. Their team of dedicated engineers and experts ensures that each endeavor adheres to the highest standards of quality and safety.
+                Beyond bricks and mortar, Shomokounik Engineering takes pride in fostering a culture of sustainability. The firm embraces cutting-edge technologies and environmentally conscious practices, contributing to a brighter and greener future.
+                
+                As Shomokounik Engineering Ltd continues to evolve, it remains steadfast in its commitment to pushing boundaries, embracing challenges, and leaving an indelible mark on the landscape of civil engineering.
+                
+            </span></p>
+            <button class="bg-gray-400 mt-3 p-2" onclick="myFunction()" id="myBtn">Read more</button>
+        </div>
+        <div class="basis-[50%] md:px-[10%]   overflow-hidden">
+            <img src="Images/building-an-o-scale-farm-stand.jpg" alt="">
+        </div>
+    </div>
+    
+    <!-- CEO -->
+    <div class="px-[5%] flex flex-col justify-between md:flex-row pt-10 gap-10 py-[10%]">
+        <div class="basis-[40%] px-[10%]">
+            <img src="Images/photo_2023-10-24_16-09-24.jpg" alt="">
+        </div>
+        <div class="basis-[60%] bg-gray-200 p-5 px-[10%] h-300">
+            <span class="text-2xl font-semibold font-semibold">Managing Director of Shomokounik</span>
+            <p class="mt-5 overflow-y-auto">I am truly delighted to welcome each and every one of you to this special gathering as the Managing Director of Somokounik Engineering Ltd. It brings me great joy to see such a distinguished and diverse group of individuals here today.
+
+                At Somokounik, we are not just a company; we are a family of dedicated professionals committed to excellence, innovation, and the pursuit of engineering marvels. Our journey has been one of challenges, triumphs, and continuous growth. As the Managing Director, I am immensely proud of the remarkable team we have assembled and the strides we have made in the field of somokounik.com</p>
+                <!-- <button class="bg-gray-400 mt-3 p-2" onclick="myFunction2()" id="myBtn2">Read more</button> -->
+        </div>
+    </div>
+    <!-- projects -->
+    <div id="projects" class="px-[5%] md:flex md:flex-col md:justify-between md:items-center ">
+        <div class="py-10 text-center">
+            <span class="text-3xl font-bold mb-10">What We Do</span>
+        </div>
+        <!-- card -->
+        <div class="flex gap-5 md:flex-row flex-col justify-center items-center">
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow  dark:border-gray-700  hover:bg-gray-200 hover:text-white">
+                <a href="#">
+                    <img class="rounded-t-lg" src="images/buildings-drawing.jpg" alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Buildings</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Our knowledge of both conventional and cutting-edge construction methods makes us valuable collaborators.</p>
+                    <!-- <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Read more
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                    </a> -->
+                </div>
+            </div>
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow  dark:border-gray-700 hover:bg-gray-200 hover:text-white">
+                <a href="#">
+                    <img class="rounded-t-lg" src="images/train.jpg" alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Rail + Transit</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Our expertise connects your stakeholders and generates economic growth.</p>
+                    <!-- <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Read more
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                    </a> -->
+                </div>
+            </div>
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow  dark:border-gray-700 hover:bg-gray-200 hover:text-white">
+                <a href="#">
+                    <img class="rounded-t-lg" src="images/comar.jpg" alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Commercial</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Balancing structural design, functionality, and environmental awareness builds commercial success.</p>
+                    <!-- <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Read more
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                    </a> -->
+                </div>
+            </div>
+            <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow  dark:border-gray-700 hover:bg-gray-200 hover:text-white">
+                <a href="#">
+                    <img class="rounded-t-lg" src="images/roads.png" alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Roads + Highways</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">We are driven to create better means of mobility.</p>
+                    <!-- <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Read more
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                    </a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact us -->
+    
+        <div id="contactUs" class="px-[5%] flex flex-col md:flex-row justify-between items-center pt-10">
+            <div class="basis-[40%] h-auto md:bg-gray-200 py-[10%] flex justify-center items-center">
+                <span class="text-3xl font-bold ">Contact Us</span>
+            </div>
+            <div class="basis-[60%] md:px-[5%] gap-5 ">
+                <!-- form contact -->
+
+
+                <!-- <div class="md">
+                    <div class="mb-4 ">
+                        <input type="text" class="form-control border w-full p-3" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-4 ">
+                        <input type="email" class="form-control border w-full p-3" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="mb-4 ">
+                        <input type="text" class="form-control border w-full p-3" id="phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="mb-4 ">
+                        <textarea class="form-control border w-full p-3" id="message" rows="3"placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" onclick="sendMail()" class="w-100 p-3 text-white"
+                        style="background-color:#B68C5A;">Send Message
+                    </button>
+                </div> -->
+                <h6 class="font-bold text-3xl">Location</h6>
+                <h6>Address:</h6>
+                <h6>House #29, Road #1, Dhanmondi, Dhaka</h6>
+                <h6>Phone: 01741713240</h6>
+                <h6 class="truncate w-40 md:w-full">Email: somokounikengineering@gmail.com</h6>
+                
+
+
+
+
+            </div>
+        </div>
+    
+    <!-- footer -->
+    <div class="flex justify-between px-[5%] py-[3%] bg-gray-200 mt-5 gap-5">
+        <div>
+            <img class="h-[30px]" src="Images/logo.png" alt="">
+            <a class="font-bold" href="#home">Shomokounik</a>
+            <div class="flex flex-col">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Services</a>
+                <a href="#contactUs">Contact Us</a>
+            </div>
+        </div>
+        <div>
+            <img class="h-[30px]" src="Images/location.png" alt="">
+            <h6 class="font-bold">Location</h6>
+            <div class="flex flex-col">
+                <h6>Address:</h6>
+                <h6>House #29, Road #1, Dhanmondi<br>Dhaka</h6>
+            </div>
+        </div>
+        <!-- <div class="overflow-hidden">
+            <img class="h-[30px]" src="Images/time.png" alt="">
+            <h6 class="font-bold">Working Hour</h6>
+            <div class="flex flex-col">
+                <h6>Mon-Fri: 9AM to 5PM</h6>
+                <h6>Sunday: 9AM to 1 PM</h6>
+            </div>
+        </div> -->
+        <div>
+            <img class="h-[30px]" src="Images/call.png" alt="">
+            <h6 class="font-bold">Contact Us</h6>
+            <div class="flex flex-col">
+                <h6>Phone: 01881649665</h6>
+                <h6>Phone: 01881649665</h6>
+                <h6 class="truncate w-40 md:w-full">Email: somokounikengineering@gmail.com</h6>
+            </div>
+        </div>
+        
+    </div>
+    <p class="bg-gray-200 flex justify-center">© 2023 Powered by Webee - All rights reserved</p>
+
+
+
+
+    <script src="index.js"></script>
+<!-- script for read more btn -->
+<script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+      }
+    }
+    </script>
+    
+    
+    <script>
+    function myFunction2() {
+      var dots2 = document.getElementById("dots2");
+      var moreText = document.getElementById("more2");
+      var btnText = document.getElementById("myBtn2");
+    
+      if (dots.style.display === "none") {
+        dots2.style.display = "inline";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+      } else {
+        dots2.style.display = "none";
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+      }
+    }
+    </script>
+
+</body>
+</html>
